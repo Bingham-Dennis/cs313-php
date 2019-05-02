@@ -10,7 +10,7 @@
         <?php
           echo "<h1>Hello World</h1>"
         ?>
-        <a href="../week2/index.html">Week 2 Team Assignment</a>
+        <a href="./week2/index.html">Week 2 Team Assignment</a>
     </div>
   </body>
 </html>
