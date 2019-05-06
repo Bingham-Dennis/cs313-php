@@ -1,0 +1,49 @@
+/******************************************************************************
+ * Color Palette
+ * Bleu De France: #3C91E6
+ * Jet: #342E37
+ * Yellow-Green: #A2D729
+ * White: #FAFFFD
+ * Coral: #FA824C
+ *****************************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #342E37;
+  color: #FA824c;
+}
+
+#welcome {
+  margin-left: 2%;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#innerContainer {
+  max-width: 50%;
+}
+
+#innerContainer h3 {
+  color: #3C91E6;
+}
+
+#innerContainer ul{
+  list-style-type: none;
+}
+
+#innerContainer ul li a {
+  text-decoration: none;
+  color: #A2D729;
+}
+
+.item {
+  margin-bottom: 5%;
+}
