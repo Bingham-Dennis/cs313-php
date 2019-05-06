@@ -10,7 +10,7 @@
         <?php
           echo "<h1>Hello World</h1>"
         ?>
-        <a href="./week2/Personal_Homepage/index.html">Home Page</a>
+        <a href="./week2/Personal_Homepage/index.php">Home Page</a>
     </div>
   </body>
 </html>
