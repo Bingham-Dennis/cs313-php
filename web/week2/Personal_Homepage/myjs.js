@@ -207,7 +207,7 @@ function getURL(link) {
       console.log(item.url);
       return item.url;
     } else {
-      console.log(url);
+      console.log(item.url);
       return '#';
     }
   });
