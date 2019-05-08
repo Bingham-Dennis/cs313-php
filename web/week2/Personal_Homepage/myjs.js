@@ -8,3 +8,7 @@ function loadTime() {
   xhttp.open("GET", "./getTime.php", true);
   xhttp.send();
 }
+
+function secondsClock() {
+  setInterval(loadTime(), 1000);
+}
