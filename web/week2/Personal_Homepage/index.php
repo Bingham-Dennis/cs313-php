@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./mystyles.css">
     <script src="./myjs.js"></script>
   </head>
-  <body onload="loadTime()">
-    <div id="welcome" onload="addListItems()">
+  <body onload="addListItems(); loadTime();">
+    <div id="welcome">
         <h1>Welcome to my Homepage</h1>
         <div id="time"></div>
     </div>
