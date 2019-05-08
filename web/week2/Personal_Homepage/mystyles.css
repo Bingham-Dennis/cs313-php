@@ -38,15 +38,15 @@ body {
   height: auto;
 }
 
-#innerContainer h3 {
+.innerContainer h3 {
   color: #3C91E6;
 }
 
-#innerContainer ul{
+.innerContainer ul{
   list-style-type: none;
 }
 
-#innerContainer ul li a {
+.innerContainer ul li a {
   text-decoration: none;
   color: #A2D729;
 }
