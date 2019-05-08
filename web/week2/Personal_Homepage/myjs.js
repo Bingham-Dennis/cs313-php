@@ -13,7 +13,7 @@ function loadTime() {
  *  Add list Items
  * This function will add the navigation links to the lists
  *****************************************************************************/
-function addNavItems() {
+function addListItems() {
   // create the array of items in the lists
   let listItems1 = [
     'Shopping Cart',
