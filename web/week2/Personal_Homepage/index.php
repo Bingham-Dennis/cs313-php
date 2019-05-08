@@ -14,7 +14,7 @@
     </div>
     <div id="container">
     <div class="innerContainer">
-      <img src="./me.jpg" alt="Dennis Bingham">
+      <a onclick="loadTime()"><img src="./me.jpg" alt="Dennis Bingham"></a>
     </div>
       <div class="innerContainer">
          <div class="item">
