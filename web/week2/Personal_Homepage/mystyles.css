@@ -38,6 +38,7 @@ body {
   margin-left: 10%;
   width: 25%;
   height: auto;
+  border-radius: 50px;
 }
 
 .innerContainer h3 {
