@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Dennis Bingham's Homepage</title>
-    <link rel="shortcut icon" type="image/jpeg" href="./favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
     <link rel="stylesheet" type="text/css" href="./mystyles.css">
     <script src="./myjs.js"></script>
   </head>
