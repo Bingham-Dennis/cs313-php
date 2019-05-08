@@ -6,14 +6,10 @@
     <link rel="stylesheet" type="text/css" href="./mystyles.css">
     <script src="./myjs.js"></script>
   </head>
-  <body>
+  <body onload="loadTime()">
     <div id="welcome">
         <h1>Welcome to my Homepage</h1>
-        <div id="time">
-            <?php
-              echo time();
-            ?>
-        </div>
+        <div id="time"></div>
     </div>
     <div id="container">
       <div id="innerContainer">
