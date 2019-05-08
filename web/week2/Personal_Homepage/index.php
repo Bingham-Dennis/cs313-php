@@ -9,7 +9,7 @@
   <body>
     <div id="welcome">
         <h1>Welcome to my Homepage</h1>
-        <div>
+        <div id="time">
             <?php
               echo time();
             ?>
@@ -31,7 +31,6 @@
               <li><a href="#">Milestone 2</a></li>
               <li><a href="#">Milestone 3</a></li>
               <li><a href="#">Project Self Assessment</a></li>
-              <li><a href="#">Shopping Cart</a></li>
             </ul>
          </div>
           <div class="item">
