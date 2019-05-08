@@ -59,7 +59,6 @@ function addListItems() {
       // get the url and set it to the href attribute on
       // the anchor tag.
       a.setAttribute('href', getURL(item));
-      console.log(a);
 
       // add the anchor tag to the list element wer created
       // earlier.
@@ -202,6 +201,8 @@ function getURL(link) {
     }
   ];
 
+  // loop over items and find the correct item and then return the url for that
+  // item
   const result = items.find( item => item.name === link);
   return result.url;
 }
