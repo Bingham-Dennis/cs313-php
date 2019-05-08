@@ -110,47 +110,47 @@ function getURL(link) {
     },
     {
       name: 'Shopping Cart',
-      url: ''
+      url: '#'
     },
     {
       name: 'DB Setup',
-      url: ''
+      url: '#'
     },
     {
       name: 'DB Access',
-      url: ''
+      url: '#'
     },
     {
       name: 'DB Update',
-      url: ''
+      url: '#'
     },
     {
       name: 'Project 1 Completion',
-      url: ''
+      url: '#'
     },
     {
       name: 'Hello World',
-      url: ''
+      url: '#'
     },
     {
       name: 'Postal Rate Calculator',
-      url: ''
+      url: '#'
     },
     {
       name: 'Milestone 1',
-      url: ''
+      url: '#'
     },
     {
       name: 'Milestone 2',
-      url: ''
+      url: '#'
     },
     {
       name: 'Milestone 3',
-      url: ''
+      url: '#'
     },
     {
       name: 'Project Self Assessment',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 2',
@@ -158,57 +158,51 @@ function getURL(link) {
     },
     {
       name: 'Week 3',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 4',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 5',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 6',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 7',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 8',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 9',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 10',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 11',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 12',
-      url: ''
+      url: '#'
     },
     {
       name: 'Week 13',
-      url: ''
+      url: '#'
     }
   ];
 
   items.forEach((item) => {
-    if (item.name === link && item.url !== ''){
-      console.log(item.url);
       return item.url;
-    } else {
-      console.log(item.url);
-      return '#';
-    }
   });
 }
