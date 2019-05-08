@@ -19,7 +19,7 @@ body {
 
 #welcome {
   background-color: black;
-  padding: 5%;
+  padding: 10px;
 }
 
 #welcome h1, #time {
