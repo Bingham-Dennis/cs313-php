@@ -15,8 +15,6 @@
     <div id="container">
     <div class="innerContainer">
       <img src="./me.jpg" alt="Dennis Bingham">
-      <button onclick="setInterval(loadTime(), 1000)" class="myBtn">Start Clock</button>
-      <button onclick="clearInterval()" class="myBtn">Stop clock</button>
     </div>
       <div class="innerContainer">
          <div class="item">
