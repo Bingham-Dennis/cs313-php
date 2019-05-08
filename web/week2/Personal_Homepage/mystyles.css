@@ -19,6 +19,10 @@ body {
 
 #welcome {
   background-color: black;
+  padding: 5%;
+}
+
+#welcome h1, #time {
   margin-left: 2%;
 }
 
