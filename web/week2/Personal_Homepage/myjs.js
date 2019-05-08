@@ -202,7 +202,6 @@ function getURL(link) {
     }
   ];
 
-  items.forEach((item) => {
-      return item.url;
-  });
+  const result = items.find( item => item.name === link);
+  return result.url;
 }
