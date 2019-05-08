@@ -34,7 +34,7 @@ body {
 }
 
 .innerContainer img {
-  padding-top: 20px 0px;
+  padding: 0px 20px;
   margin-left: 10%;
   width: 25%;
   height: auto;
