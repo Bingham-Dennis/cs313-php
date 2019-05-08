@@ -105,7 +105,7 @@ function getURL(link) {
   const items = [
     {
       name: 'Home',
-      url: 'index.html'
+      url: './index.php'
     },
     {
       name: 'Shopping Cart',
