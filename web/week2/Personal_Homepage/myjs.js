@@ -204,8 +204,10 @@ function getURL(link) {
 
   items.forEach((item) => {
     if (item.name === link && item.url !== ''){
+      console.log(item.url);
       return item.url;
     } else {
+      console.log(url);
       return '#';
     }
   });
