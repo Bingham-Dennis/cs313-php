@@ -14,7 +14,7 @@
     </div>
     <div id="container">
     <div class="innerContainer">
-      <img src="./me.jpg" alt="Dennis Bingahm">
+      <img src="./me.jpg" alt="Dennis Bingham">
     </div>
       <div class="innerContainer">
          <div class="item">

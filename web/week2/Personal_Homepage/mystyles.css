@@ -33,6 +33,11 @@ body {
   max-width: 50%;
 }
 
+.innerContainer img {
+  width: 25%;
+  height: auto;
+}
+
 #innerContainer h3 {
   color: #3C91E6;
 }
