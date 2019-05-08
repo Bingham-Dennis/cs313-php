@@ -15,7 +15,7 @@
     <div id="container">
     <div class="innerContainer">
       <img src="./me.jpg" alt="Dennis Bingham">
-      <button onclick="loadTime()">Change Timestamp</button>
+      <button onclick="loadTime()" class="myBtn">Change Timestamp</button>
     </div>
       <div class="innerContainer">
          <div class="item">
