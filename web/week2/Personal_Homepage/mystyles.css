@@ -23,11 +23,13 @@ body {
 
 #container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#innerContainer {
+.innerContainer {
+  align-items: center;
+  justify-content: center;
   max-width: 50%;
 }
 

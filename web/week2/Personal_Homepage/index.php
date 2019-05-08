@@ -13,7 +13,8 @@
         <div id="time"></div>
     </div>
     <div id="container">
-      <div id="innerContainer">
+    <div class="innerContainer"> </div>
+      <div class="innerContainer">
          <div class="item">
             <h3>Assignments</h3>
             <ul>
