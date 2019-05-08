@@ -13,7 +13,9 @@
         <div id="time"></div>
     </div>
     <div id="container">
-    <div class="innerContainer"> </div>
+    <div class="innerContainer">
+      <img src="./me.jpg" alt="Dennis Bingahm">
+    </div>
       <div class="innerContainer">
          <div class="item">
             <h3>Assignments</h3>
