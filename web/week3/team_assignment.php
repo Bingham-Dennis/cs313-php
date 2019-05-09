@@ -26,7 +26,7 @@
                       "Computer Engineering" => "CE"
                     );
             foreach ($majors as $major => $abbr) {
-              print "<input type=\" $type\" name=\"$name\" value=\"$abbr\"> $major<br>";
+              print "<input type=\"$type\" name=\"$name\" value=\"$abbr\"> $major<br>";
             }
           ?>
       </div>
