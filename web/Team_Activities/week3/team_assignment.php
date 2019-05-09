@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Team Assignment Week 3</title>
-    <link rel="stylesheet" type="text/css" href="mystyles.css">
+    <link rel="stylesheet" type="text/css" href="./mystyles.css">
   </head>
   <body>
     <form action="./process.php" method="POST" class="signup">

@@ -2,15 +2,33 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World App</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+    <title>Dennis Bingham's Homepage</title>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" type="text/css" href="./mystyles.css">
+    <script src="./myjs.js"></script>
   </head>
-  <body>
-    <div .class="hello">
-        <?php
-          echo "<h1>Hello World</h1>"
-        ?>
-        <a href="./week2/Personal_Homepage/index.php">Home Page</a>
+  <body onload="addListItems(); loadTime();">
+    <div id="welcome">
+        <h1>Welcome to my Homepage</h1>
+        <div id="time"></div>
+    </div>
+    <div id="container">
+    <div class="innerContainer">
+      <img src="./me.jpg" alt="Dennis Bingham">
+    </div>
+      <div class="innerContainer">
+         <div class="item">
+            <h3>Assignments</h3>
+            <ul id="list1">
+            </ul>
+         </div>
+          <div class="item">
+            <h3>Team Assignments</h3>
+            <ul id="list2">
+
+            </ul>
+          </div>
+      </div>
     </div>
   </body>
 </html>

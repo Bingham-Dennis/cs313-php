@@ -153,11 +153,11 @@ function getURL(link) {
     },
     {
       name: 'Week 2',
-      url: '../Team_Assignment/index.html'
+      url: '../../Team_Activities/week2/index.html'
     },
     {
       name: 'Week 3',
-      url: '../../week3/team_assignment.php'
+      url: '../../Team_Activities/week3/team_assignment.php'
     },
     {
       name: 'Week 4',
