@@ -157,7 +157,7 @@ function getURL(link) {
     },
     {
       name: 'Week 3',
-      url: './week3/team_assignment.php'
+      url: '../../week3/team_assignment.php'
     },
     {
       name: 'Week 4',
