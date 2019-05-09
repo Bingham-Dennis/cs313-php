@@ -13,6 +13,7 @@
           $countryMessage = $countryMessage . $country . ", ";
         }
       }
+      echo $countries;
   ?>
   </body>
 </html>
