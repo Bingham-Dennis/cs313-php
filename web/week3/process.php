@@ -13,7 +13,7 @@
       print "<h5>$comment</h5><br>";
       foreach($countries as $country) {
         if ($country === end($countries )) {
-          $countryMessage = "and " . $countryMessage . $country;
+          $countryMessage = $countryMessage . "and " .  $country;
         } else {
           $countryMessage = $countryMessage . $country . ", ";
         }
