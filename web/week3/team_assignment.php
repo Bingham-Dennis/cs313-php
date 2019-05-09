@@ -16,10 +16,19 @@
       </div>
       <div class="section">
           <h2>Major:</h2>
-          <input type="radio" name="major" value="CS"> Computer Science<br>
-          <input type="radio" name="major" value="WDD"> Web Design and Development<br>
-          <input type="radio" name="major" value="CIT"> Computer Information Technology<br>
-          <input type="radio" name="major" value="CE"> Computer Engineering<br>
+          <?php
+            $type = "radio";
+            $name = "major";
+            $majors = array(
+                      "Computer Science" => "CS",
+                      "Web Design and Development" => "WDD",
+                      "computer Information Technology" => "CIT",
+                      "Computer Engineering" => "CE"
+                    );
+            foreach ($majors as $major => $abbr) {
+              print "<input type=\" $type\" name=\"$name\" value=\"$abbr\"> $major<br>";
+            }
+          ?>
       </div>
       <div class="section">
           <h2>Countries Visited:</h2>
