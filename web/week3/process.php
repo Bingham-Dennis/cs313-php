@@ -7,7 +7,7 @@
       $comment = $_POST["comment"];
       $countryMessage = "<p>You have been to ";
       $countries = $_POST['countryList'];
-      $countryMap = new \Ds\Map([
+      $countryMap = array(
               'na' => 'North America',
               'sa' => 'South America',
               'eu' => 'Europe',
@@ -15,7 +15,7 @@
               'aa' => 'Austrailia',
               'af' => 'Africa',
               'at' => 'Antartica'
-              ]);
+              );
       print "<h1>Welcome $name</h1><br>";
       print "<h3>your email is $email</h3><br>";
       print "<h5>you are a $major major</h5><br>";
