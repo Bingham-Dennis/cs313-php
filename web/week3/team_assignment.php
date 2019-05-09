@@ -32,13 +32,13 @@
       </div>
       <div class="section">
           <h2>Countries Visited:</h2>
-          <input type="checkbox" name="countryList[]" value="North America"> North America<br>
-          <input type="checkbox" name="countryList[]" value="South America"> South America<br>
-          <input type="checkbox" name="countryList[]" value="Europe"> Europe<br>
-          <input type="checkbox" name="countryList[]" value="Asia"> Asia<br>
-          <input type="checkbox" name="countryList[]" value="Australia"> Australia<br>
-          <input type="checkbox" name="countryList[]" value="Africa"> Africa<br>
-          <input type="checkbox" name="countryList[]" value="Antartica"> Antartica<br>
+          <input type="checkbox" name="countryList[]" value="na"> North America<br>
+          <input type="checkbox" name="countryList[]" value="sa"> South America<br>
+          <input type="checkbox" name="countryList[]" value="eu"> Europe<br>
+          <input type="checkbox" name="countryList[]" value="as"> Asia<br>
+          <input type="checkbox" name="countryList[]" value="aa"> Australia<br>
+          <input type="checkbox" name="countryList[]" value="af"> Africa<br>
+          <input type="checkbox" name="countryList[]" value="at"> Antartica<br>
       </div>
       <div class="section">
           <h2>Comments:</h2><br>
