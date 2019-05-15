@@ -1,6 +1,6 @@
 <?php
   echo "hello";
-  $dog = $_POST['dog'];
+  $dog = array($_POST['id'], $_POST['name'], $_POST['image']);
   var_dump($dog);
   // session.ls
   // start();
