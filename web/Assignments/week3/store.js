@@ -148,5 +148,5 @@ function addToCart(id) {
   let dog = items.find( item => item.id === id);
   console.log(dog);
 
-  $.post('./store.php', JSON.stringify(dog));
+  $.post('./store.php', dog);
 }
