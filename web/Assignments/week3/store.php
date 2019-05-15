@@ -7,7 +7,9 @@
     echo "broken";
   }
 
+  session_name("PuppyFactory");
   session_start();
+  var_dump($_SESSION);
   $_SESSION['cart'] = array();
   push_array($_SESSION['cart'], $dog);
   foreach ($_SESSION['cart'] as $dog) {
