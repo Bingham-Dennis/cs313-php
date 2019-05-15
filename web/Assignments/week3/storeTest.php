@@ -9,6 +9,11 @@
     <script type="text/javascript" src="store.js"></script>
   </head>
   <body onload="loadItems()">
+  <?php
+        session.start();
+        $_SESSION['id'] = 1002;
+        var_dump($_SESSION['id']);
+      ?>
     <header id="nav">
       <div id="logo">
         <a href="./store.html">
