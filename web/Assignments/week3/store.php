@@ -1,7 +1,11 @@
 <?php
   echo "hello";
-  $dog = array(json_decode($_POST['id']), json_decode($_POST['name']), json_decode($_POST['image']));
-  var_dump($dog);
+  if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['image'])) {
+    $dog = array(json_decode($_POST['id']), json_decode($_POST['name']), json_decode($_POST['image']));
+    var_dump($dog);
+  } else {
+    echo "broken";
+  }
   // session.ls
   // start();
   // $_SESSION['cart'] = array();
