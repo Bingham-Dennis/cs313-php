@@ -7,7 +7,7 @@
     echo "broken";
   }
 
-  session_name("PuppyFactory");
+  session_name("PHPSESSID");
   session_start();
   var_dump($_SESSION);
   $_SESSION['cart'] = array();
