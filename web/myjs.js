@@ -109,7 +109,7 @@ function getURL(link) {
     },
     {
       name: 'Shopping Cart',
-      url: '#'
+      url: './Assignments/week3/store.html'
     },
     {
       name: 'DB Setup',

@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: rgb(0, 212, 240);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 5px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: rgb(0, 212, 240);
+}
+
+#nav a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#logo h1 {
+  margin-left: 10%;
+}
+
+#logo h2 {
+  margin-left: 50%;
+}
+
+.nav_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 2px;
+  line-height: 5;
+}
+
+.nav_items a {
+  display: block;
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+  color: rgb(0, 212, 240);
+  cursor: pointer;
+}
+
+.nav_items a:hover {
+  display: block;
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1000px;
+  height: auto;
+  background-color: rgb(126, 126, 126);
+}
+
+#content h3 {
+  margin: 3%;
+  padding: 20px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  max-height: 295px;
+  margin: 15px;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 200px;
+  max-height: 100px;
+  margin-left: 5%;
+  border: 2px solid rgb(9, 212, 240);
+}
+
+.cartCard {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  max-height: 295px;
+  margin: 15px;
+  margin-left: 23%;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.cardContent {
+  margin-left: 3%;
+  padding: 10px;
+}
+
+.card button, .cartCard button {
+  width: 100px;
+  height: 50px;
+  background-color: #FFFFFF;
+  color: rgb(0, 212, 240);
+  border-color: rgb(9, 212, 240);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 38%;
+  font-size: 16px;
+}
+
+.card button:hover, .cartCard button:hover {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(0, 212, 240);
+  color: #FFFFFF;
+  border-color: rgb(9, 212, 240);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 38%;
+  font-size: 16px;
+}
+
+#shopButtons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+#shopButtons button {
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#btn1 {
+  background-color: #FFFFFF;
+  color: rgb(0, 212, 240);
+  border-color: rgb(9, 212, 240);
+  margin-right: 5px;
+}
+
+#btn1:hover {
+  background-color: rgb(0, 212, 240);
+  color: #FFFFFF;
+  border-color: rgb(9, 212, 240);
+  margin-right: 5px;
+}
+
+#btn2 {
+  background-color: rgb(0, 212, 240);
+  color: #FFFFFF;
+  border-color: rgb(9, 212, 240);
+}
+
+#btn2:hover {
+  background-color: #FFFFFF;
+  color: rgb(0, 212, 240);
+  border-color: rgb(9, 212, 240);
+}
+
+#message {
+  width: 100%;
+  margin: 20px 10px;
+}
+
+#checkoutForm {
+  width: 80%;
+  height: 70vh;
+}
+
+#section1 {
+  margin: 20px 10px;
+}
+
+#section2 {
+  margin: 20px 10px;
+}
+
+#section3 {
+  margin: 20px 10px;
+}
+
+#lowerNav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 5px;
+}
+
+#lowerNav h5 {
+  line-height: 5;
+  padding: 10px;
+}
