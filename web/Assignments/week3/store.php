@@ -10,5 +10,7 @@
   session_start();
   $_SESSION['cart'] = array();
   push_array($_SESSION['cart'], $dog);
-  var_dump($_SESSION['cart']);
+  foreach ($_SESSION['cart'] as $dog) {
+    echo $dog;
+  }
 ?>
