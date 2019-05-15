@@ -1,6 +1,6 @@
 <?php
   if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['image']) && isset($_POST['description'])) {
-    $dog = array(json_decode($_POST['id']), json_decode($_POST['name']), json_decode($_POST['image']), json_decode($_POST['decription']));
+    $dog = array($_POST['id'], $_POST['name'], $_POST['image'], $_POST['decription']);
     var_dump($dog);
   } else {
     echo "broken";
