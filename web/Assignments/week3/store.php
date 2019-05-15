@@ -8,10 +8,7 @@
   }
 
   session_start();
-  var_dump($_SESSION);
   $_SESSION['cart'] = array();
-  var_dump($_SESSION['cart']);
   push_array($_SESSION['cart'], $dog);
-  var_dump($_SESSION['cart']);
   var_dump($_SESSION['cart']);
 ?>
