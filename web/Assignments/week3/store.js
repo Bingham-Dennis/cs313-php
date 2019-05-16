@@ -153,16 +153,29 @@ function addToCart(id) {
   $.post('./store.php', dog);
 }
 
-function getData(actionType, url, sync) {
-  var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = async function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var data = await JSON.parse(this.responseText);
-    console.log(data);
+async function getData() {
+  let result;
+
+  try {
+    result = await $.ajax(
+        url: './cart.php',
+        type: 'GET'
+    );
+
+    return result;
+  } catch (error) {
+    console.error(error);
   }
-};
-xmlhttp.open(actionType, url, sync);
-xmlhttp.send();
+
+//   var xmlhttp = new XMLHttpRequest();
+// xmlhttp.onreadystatechange = async function() {
+//   if (this.readyState == 4 && this.status == 200) {
+//     var data = await JSON.parse(this.responseText);
+//     console.log(data);
+//   }
+// };
+// xmlhttp.open(actionType, url, sync);
+// xmlhttp.send();
 }
 
 async function getCartItems() {
