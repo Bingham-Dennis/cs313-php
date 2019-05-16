@@ -13,6 +13,7 @@
   $_SESSION['cart'] = array();
   var_dump($_SESSION);
   $_SESSION['id'] = 1002;
+  var_dump($_SESSION['id']);
   // push_array($_SESSION['cart'], $dog);
   // foreach ($_SESSION['cart'] as $dog) {
   //   echo $dog;
