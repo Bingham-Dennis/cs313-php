@@ -118,7 +118,7 @@ var count = 0;
 function loadItems() {
   items.forEach((dog) => {
     let div = document.createElement('div');
-    div.setAttribute('class', 'card');
+    div.setAttribute('class', 'cartCard');
 
     let h4 = document.createElement('h4');
     h4.setAttribute('class', 'cardContent');
