@@ -178,8 +178,8 @@ async function getData() {
 // xmlhttp.send();
 }
 
-async function getCartItems() {
-  let data =  await getData("GET", "cart.php", true);
+function getCartItems() {
+  let data = getData("GET", "cart.php", true);
   console.log(data);
   if (data !== undefined) {
     data.forEach((dog) => {
