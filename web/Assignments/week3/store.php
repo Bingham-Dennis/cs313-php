@@ -14,7 +14,8 @@
   var_dump($_SESSION);
   $_SESSION['id'] = 1002;
   var_dump($_SESSION['id']);
-  // push_array($_SESSION['cart'], $dog);
+  push_array($_SESSION['cart'], $dog);
+  var_dump($_SESSION['cart']);
   // foreach ($_SESSION['cart'] as $dog) {
   //   echo $dog;
   // }
