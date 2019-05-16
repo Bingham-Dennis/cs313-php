@@ -13,6 +13,9 @@
   $_SESSION['id'] = 1002;
   array_push($_SESSION['cart'], $dog);
   foreach ($_SESSION['cart'] as $dog) {
-     echo $dog;
+     echo $dog[0];
+     echo $dog[1];
+     echo $dog[2];
+     echo $dog[3];
  }
 ?>
