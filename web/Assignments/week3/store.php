@@ -9,14 +9,10 @@
 
   session_name("PuppyFactory");
   session_start();
-  var_dump($_SESSION);
   $_SESSION['cart'] = array();
-  var_dump($_SESSION);
   $_SESSION['id'] = 1002;
-  var_dump($_SESSION['id']);
   array_push($_SESSION['cart'], $dog);
-  var_dump($_SESSION['cart']);
-  // foreach ($_SESSION['cart'] as $dog) {
-  //   echo $dog;
-  // }
+  foreach ($_SESSION['cart'] as $dog) {
+     echo $dog;
+ }
 ?>
