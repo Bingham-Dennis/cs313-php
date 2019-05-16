@@ -157,10 +157,10 @@ async function getData() {
   let result;
 
   try {
-    result = await $.ajax(
+    result = await $.ajax({
         url: './cart.php',
         type: 'GET'
-    );
+    });
 
     return result;
   } catch (error) {
