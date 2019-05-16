@@ -153,9 +153,9 @@ function addToCart(id) {
   $.post('./store.php', dog);
 }
 
-async function getData(actionType, url, sync) {
+function getData(actionType, url, sync) {
   var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
+xmlhttp.onreadystatechange = async function() {
   if (this.readyState == 4 && this.status == 200) {
     var data = await JSON.parse(this.responseText);
   }
