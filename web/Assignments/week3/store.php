@@ -7,12 +7,14 @@
     echo "broken";
   }
 
-  session_name("PHPSESSID");
+  session_name("PuppyFactory");
   session_start();
   var_dump($_SESSION);
   $_SESSION['cart'] = array();
-  push_array($_SESSION['cart'], $dog);
-  foreach ($_SESSION['cart'] as $dog) {
-    echo $dog;
-  }
+  var_dump($_SESSION);
+  $_SESSION['id'] = 1002;
+  // push_array($_SESSION['cart'], $dog);
+  // foreach ($_SESSION['cart'] as $dog) {
+  //   echo $dog;
+  // }
 ?>
