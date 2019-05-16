@@ -24,14 +24,5 @@
     echo "Customer Location information left blank.";
   }
 
-  var_dump($_SESSION['fName']);
-  var_dump($_SESSION['lName']);
-  var_dump($_SESSION['email']);
-  var_dump($_SESSION['street']);
-  var_dump($_SESSION['aptNum']);
-  var_dump($_SESSION['city']);
-  var_dump($_SESSION['state']);
-  var_dump($_SESSION['zip']);
-  var_dump($_SESSION['country']);
-  var_dump($_SESSION['phone']);
+  echo file_get_contents("./confirm.html");
 ?>
