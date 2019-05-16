@@ -8,105 +8,105 @@ const items = [
   },
   {
     id: 2,
-    name: 'Bruno',
+    name: 'Spot',
     image: 'https://images.dog.ceo/breeds/cairn/n02096177_170.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 3,
-    name: 'Bruno',
+    name: 'Roxy',
     image: 'https://images.dog.ceo/breeds/saluki/n02091831_7977.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 4,
-    name: 'Bruno',
+    name: 'Snazzy',
     image: 'https://images.dog.ceo/breeds/spaniel-sussex/n02102480_5703.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 5,
-    name: 'Bruno',
+    name: 'Zazzles',
     image: 'https://images.dog.ceo/breeds/springer-english/n02102040_6603.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 6,
-    name: 'Bruno',
+    name: 'Tanner',
     image: 'https://images.dog.ceo/breeds/appenzeller/n02107908_3119.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 7,
-    name: 'Bruno',
+    name: 'Goldie',
     image: 'https://images.dog.ceo/breeds/labrador/n02099712_4323.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 8,
-    name: 'Bruno',
+    name: 'Yeller',
     image: 'https://images.dog.ceo/breeds/collie/n02106030_10021.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 9,
-    name: 'Bruno',
+    name: 'Dexter',
     image: 'https://images.dog.ceo/breeds/newfoundland/n02111277_612.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 10,
-    name: 'Bruno',
+    name: 'Bandit',
     image: 'https://images.dog.ceo/breeds/beagle/n02088364_7927.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 11,
-    name: 'Bruno',
+    name: 'Sargent',
     image: 'https://images.dog.ceo/breeds/schnauzer-miniature/n02097047_509.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 12,
-    name: 'Bruno',
+    name: 'Fluffy',
     image: 'https://images.dog.ceo/breeds/maltese/n02085936_7941.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 13,
-    name: 'Bruno',
+    name: 'Bruce',
     image: 'https://images.dog.ceo/breeds/rottweiler/n02106550_11870.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 14,
-    name: 'Bruno',
+    name: 'Gizmo',
     image: 'https://images.dog.ceo/breeds/cockapoo/bubbles2.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 15,
-    name: 'Bruno',
+    name: 'Gracie',
     image: 'https://images.dog.ceo/breeds/basenji/n02110806_1100.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
   },
   {
     id: 16,
-    name: 'Bruno',
+    name: 'Lady',
     image: 'https://images.dog.ceo/breeds/springer-english/n02102040_2481.jpg',
     description: 'Bruno, is a fun loving dog that just wants a new forever home. He love playing fetch and giving love to anyone who wants it.',
     button: 'Add To Cart'
