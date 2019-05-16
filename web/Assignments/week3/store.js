@@ -153,6 +153,10 @@ function addToCart(id) {
   $.post('./store.php', dog);
 }
 
+function removeFromCart(id) {
+  console.log(`Removing ${id} from cart.`);
+}
+
 async function getData() {
   let result;
 
@@ -166,16 +170,6 @@ async function getData() {
   } catch (error) {
     console.error(error);
   }
-
-//   var xmlhttp = new XMLHttpRequest();
-// xmlhttp.onreadystatechange = async function() {
-//   if (this.readyState == 4 && this.status == 200) {
-//     var data = await JSON.parse(this.responseText);
-//     console.log(data);
-//   }
-// };
-// xmlhttp.open(actionType, url, sync);
-// xmlhttp.send();
 }
 
 async function getCartItems() {
@@ -183,7 +177,31 @@ async function getCartItems() {
   console.log(data);
   if (data !== undefined) {
     data.forEach((dog) => {
-      console.log(dog);
+      let div = document.createElement('div');
+    div.setAttribute('class', 'card');
+
+    let h4 = document.createElement('h4');
+    h4.setAttribute('class', 'cardContent');
+    h4.innerHTML = dog.name;
+    div.appendChild(h4);
+
+    let i = document.createElement('img');
+    i.setAttribute('src', dog.image);
+    i.setAttribute('alt', 'dog picture');
+    div.appendChild(i);
+
+    let p = document.createElement('p');
+    p.setAttribute('class', 'cardContent');
+    p.innerHTML = dog.description;
+    div.appendChild(p);
+
+    let b = document.createElement('button');
+    b.innerHTML = 'Remove';
+    b.setAttribute('id', dog.id);
+    b.setAttribute('onclick', `removeFromCart(${dog.id})`);
+    div.appendChild(b);
+
+    document.getElementById('content').appendChild(div);
     });
   } else {
     console.log("You have no items in your cart");
