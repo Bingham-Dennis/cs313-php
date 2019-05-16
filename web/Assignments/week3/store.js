@@ -165,8 +165,8 @@ xmlhttp.open(actionType, url, sync);
 xmlhttp.send();
 }
 
-function getCartItems() {
-  let data = getData("GET", "cart.php", true);
+async function getCartItems() {
+  let data =  await getData("GET", "cart.php", true);
   console.log(data);
   if (data !== undefined) {
     data.forEach((dog) => {
