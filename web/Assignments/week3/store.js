@@ -179,7 +179,7 @@ async function getData() {
 }
 
 async function getCartItems() {
-  let data = await getData("GET", "cart.php", true);
+  let data = JSON.parse(await getData("GET", "cart.php", true));
   console.log(data);
   if (data !== undefined) {
     data.forEach((dog) => {
@@ -191,7 +191,7 @@ async function getCartItems() {
 }
 
 function numItems() {
-  let data = getCartItems();
+  let data = JSON.parse(getCartItems());
   console.log(data);
   data.forEach((item) => {
     count++;
