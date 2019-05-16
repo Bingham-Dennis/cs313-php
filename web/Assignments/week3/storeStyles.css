@@ -87,7 +87,7 @@ body {
   border-radius: 5px;
 }
 
-.card img, .cartCard {
+.card img, .cartCard img {
   width: 200px;
   max-height: 100px;
   margin-left: 5%;
