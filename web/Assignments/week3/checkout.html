@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script type="text/javascript" src="store.js"></script>
   </head>
-  <body>
+  <body onload="numItems">
       <header id="nav">
           <div id="logo">
             <a href="./store.html">
@@ -23,7 +23,7 @@
           </ul>
         </header>
         <div id="content">
-          <h1 id="message">You are about to purchase __ items</h1>
+          <h1 id="message">You are about to purchase <span id="count" /> items</h1>
           <form id="checkoutForm">
             <div id="section1">
                 <input type="text" name="firstName" placeholder="First Name"><br>

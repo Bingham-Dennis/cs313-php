@@ -113,6 +113,8 @@ const items = [
   }
 ];
 
+var count = 0;
+
 function loadItems() {
   items.forEach((dog) => {
     let div = document.createElement('div');
@@ -151,6 +153,17 @@ function addToCart(id) {
   $.post('./store.php', dog);
 }
 
+function getData(actionType, url, sync) {
+  var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var data = JSON.parse(this.responseText);
+  }
+};
+xmlhttp.open(actionType, url, sync);
+xmlhttp.send();
+}
+
 function getCartItems() {
   let data = getData("GET", "cart.php", true);
   if (data !== undefined) {
@@ -162,13 +175,10 @@ function getCartItems() {
   }
 }
 
-function getData(actionType, url, sync) {
-  var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var data = JSON.parse(this.responseText);
-  }
-};
-xmlhttp.open(actionType, url, sync);
-xmlhttp.send();
+function numItems() {
+  let data = getCartItems();
+  data.forEach((item) => {
+    count++;
+  });
+  document.getElementById('count').innerHTML = count;
 }
