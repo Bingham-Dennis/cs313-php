@@ -2,7 +2,6 @@
 
   if (isset($_POST['id']) && isset($_POST['name']) && isset($_POST['image']) && isset($_POST['description'])) {
     $dog = array('id' => $_POST['id'], 'name' => $_POST['name'], 'image' => $_POST['image'], 'description' => $_POST['description']);
-    var_dump($dog);
   } else {
     echo "Object was not set properly.";
   }
