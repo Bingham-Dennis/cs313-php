@@ -151,7 +151,6 @@ function addToCart(id) {
   $.post('./store.php', dog);
 }
 
-// @help: You are here!
 function getCartItems() {
   let data = getData("GET", "cart.php", true);
   data.forEach((dog) => {
