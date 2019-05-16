@@ -177,6 +177,7 @@ function getCartItems() {
 
 function numItems() {
   let data = getCartItems();
+  console.log(data);
   data.forEach((item) => {
     count++;
   });
