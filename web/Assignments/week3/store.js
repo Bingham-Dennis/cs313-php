@@ -118,7 +118,7 @@ var count = 0;
 function loadItems() {
   items.forEach((dog) => {
     let div = document.createElement('div');
-    div.setAttribute('class', 'cartCard');
+    div.setAttribute('class', 'card');
 
     let h4 = document.createElement('h4');
     h4.setAttribute('class', 'cardContent');
@@ -178,30 +178,30 @@ async function getCartItems() {
   if (data !== undefined) {
     data.forEach((dog) => {
       let div = document.createElement('div');
-    div.setAttribute('class', 'card');
+      div.setAttribute('class', 'cartCard');
 
-    let h4 = document.createElement('h4');
-    h4.setAttribute('class', 'cardContent');
-    h4.innerHTML = dog.name;
-    div.appendChild(h4);
+      let h4 = document.createElement('h4');
+      h4.setAttribute('class', 'cardContent');
+      h4.innerHTML = dog.name;
+      div.appendChild(h4);
 
-    let i = document.createElement('img');
-    i.setAttribute('src', dog.image);
-    i.setAttribute('alt', 'dog picture');
-    div.appendChild(i);
+      let i = document.createElement('img');
+      i.setAttribute('src', dog.image);
+      i.setAttribute('alt', 'dog picture');
+      div.appendChild(i);
 
-    let p = document.createElement('p');
-    p.setAttribute('class', 'cardContent');
-    p.innerHTML = dog.description;
-    div.appendChild(p);
+      let p = document.createElement('p');
+      p.setAttribute('class', 'cardContent');
+      p.innerHTML = dog.description;
+      div.appendChild(p);
 
-    let b = document.createElement('button');
-    b.innerHTML = 'Remove';
-    b.setAttribute('id', dog.id);
-    b.setAttribute('onclick', `removeFromCart(${dog.id})`);
-    div.appendChild(b);
+      let b = document.createElement('button');
+      b.innerHTML = 'Remove';
+      b.setAttribute('id', dog.id);
+      b.setAttribute('onclick', `removeFromCart(${dog.id})`);
+      div.appendChild(b);
 
-    document.getElementById('content').appendChild(div);
+      document.getElementById('content').appendChild(div);
     });
   } else {
     console.log("You have no items in your cart");
