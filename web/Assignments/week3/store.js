@@ -153,11 +153,11 @@ function addToCart(id) {
   $.post('./store.php', dog);
 }
 
-function getData(actionType, url, sync) {
+async function getData(actionType, url, sync) {
   var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    var data = JSON.parse(this.responseText);
+    var data = await JSON.parse(this.responseText);
   }
 };
 xmlhttp.open(actionType, url, sync);
