@@ -153,9 +153,13 @@ function addToCart(id) {
 
 function getCartItems() {
   let data = getData("GET", "cart.php", true);
-  data.forEach((dog) => {
-    console.log(dog);
-  });
+  if (data !== undefined) {
+    data.forEach((dog) => {
+      console.log(dog);
+    });
+  } else {
+    console.log("You have no items in your cart");
+  }
 }
 
 function getData(actionType, url, sync) {
