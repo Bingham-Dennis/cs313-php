@@ -166,6 +166,7 @@ xmlhttp.send();
 
 function getCartItems() {
   let data = getData("GET", "cart.php", true);
+  console.log(data);
   if (data !== undefined) {
     data.forEach((dog) => {
       console.log(dog);
