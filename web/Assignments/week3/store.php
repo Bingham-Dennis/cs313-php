@@ -9,7 +9,7 @@
 
   session_name("PuppyFactory");
   session_start();
-  if (isset($_SESSION['cart'])  {
+  if (isset($_SESSION['cart']))  {
     array_push($_SESSION['cart'], $dog);
     foreach ($_SESSION['cart'] as $dog) {
       echo $dog[0];
@@ -21,10 +21,10 @@
     $_SESSION['cart'] = array();
     array_push($_SESSION['cart'], $dog);
     foreach ($_SESSION['cart'] as $dog) {
-       echo $dog[0];
-      echo $dog[1];
-      echo $dog[2];
-      echo $dog[3];
+        echo $dog[0];
+        echo $dog[1];
+        echo $dog[2];
+        echo $dog[3];
     }
  }
 ?>
