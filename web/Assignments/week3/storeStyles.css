@@ -140,6 +140,7 @@ body {
   justify-content: center;
   flex-direction: row;
   margin: 0 auto;
+  padding-bottom: 10px;
   width: 1000px;
   height: auto;
   background-color: rgb(126, 126, 126);
