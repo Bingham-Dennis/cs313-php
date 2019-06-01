@@ -6,7 +6,7 @@
   @accent: a2353013d1a5ef67c2d144ec61b061b5
 */
 
-function connectDB() {
+async function connectDB() {
   let result;
 
   try {
