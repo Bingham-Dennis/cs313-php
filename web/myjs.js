@@ -117,7 +117,7 @@ function getURL(link) {
     },
     {
       name: 'DB Access',
-      url: '#'
+      url: './Assignments/week5/index.html'
     },
     {
       name: 'DB Update',
