@@ -43,11 +43,11 @@
 
     if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
       $_SESSION['user'] = $givenUsername;
-      header("Location: dashboard.html");
+      header("Location: ./dashboard.html");
     }
 
   } else {
-    header("Location: index.html");
+    header("Location: ./index.html");
   }
 
 ?>
