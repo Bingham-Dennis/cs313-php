@@ -26,8 +26,6 @@
     $givenUsername = $_POST['username'];
     $givenPassword = $_POST['password'];
 
-    echo $givenUsername;
-    echo $givenPassword;
     $user_id = $db->prepare('SELECT user_id FROM users WHERE username=:username');
     $user_id->bindValue(':username', $givenUsername, PDO::PARAM_STR);
     $user_id->execute();
@@ -38,7 +36,7 @@
     $user_password->execute();
     $password = $user_password->fetch(PDO::FETCH_ASSOC);
     if ($password['user_password'] === $givenPassword) {
-      echo 'Welcome ' . $username . ' Your user id is: ' . $id['user_id'] . ' and your password is: ' . $password['user_password'];
+      echo 'Welcome ' . $givenUsername . ' Your user id is: ' . $id['user_id'] . ' and your password is: ' . $password['user_password'];
     }
 
   } else {
