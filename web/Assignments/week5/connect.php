@@ -35,10 +35,10 @@
     var_dump($id);
 
     $user_password = $db->prepare('SELECT user_password FROM users WHERE user_id=:id');
-    $user_password->bindValue(':id', $id, PDO::PARAM_INT);
-    $user_password->execute();
-    $password = $user_password->fetch(PDO::FETCH_ASSOC);
-    var_dump($password);
+    // $user_password->bindValue(':id', $id, PDO::PARAM_INT);
+    // $user_password->execute();
+    // $password = $user_password->fetch(PDO::FETCH_ASSOC);
+    // var_dump($password);
     // if ($check === $password) {
     //   echo 'Welcome ' . $username . ' Your user id is: ' . $id . ' and your password is: ' . $check;
     // }
