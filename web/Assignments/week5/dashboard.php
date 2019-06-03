@@ -1,11 +1,30 @@
 <?php
-  session_name('MoviesPlus');
-  session_start();
+   try
+   {
+     session_name('MoviesPlus');
+     session_start();
+     $dbUrl = getenv('DATABASE_URL');
 
-  var_dump($_SESSION['user']);
-  var_dump($_SESSION['user_id']);
+     $dbOpts = parse_url($dbUrl);
 
-  // $db = $_SESSION['db'];
+     $dbHost = $dbOpts["host"];
+     $dbPort = $dbOpts["port"];
+     $dbUser = $dbOpts["user"];
+     $dbPassword = $dbOpts["pass"];
+     $dbName = ltrim($dbOpts["path"],'/');
+
+     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   }
+   catch (PDOException $ex)
+   {
+     echo 'Error!: ' . $ex->getMessage();
+     die();
+   }
+
+   var_dump($_SESSION['user']);
+   var_dump($_SESSION['user_id']);
 ?>
 
 <!DOCTYPE html>
