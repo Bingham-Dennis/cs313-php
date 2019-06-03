@@ -1,6 +1,8 @@
 <?php
   try
   {
+    start_session();
+    $_SESSION['Logged_in'] = false;
     $dbUrl = getenv('DATABASE_URL');
 
     $dbOpts = parse_url($dbUrl);
@@ -36,7 +38,12 @@
     $user_password->execute();
     $password = $user_password->fetch(PDO::FETCH_ASSOC);
     if ($password['user_password'] === $givenPassword) {
-      echo 'Welcome ' . $givenUsername . ' Your user id is: ' . $id['user_id'] . ' and your password is: ' . $password['user_password'];
+      $_SESSION['Logged_in'] = true;
+    }
+
+    if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
+      $_SESSION['user'] = $givenUsername;
+      header('Location: dashboard.html');
     }
 
   } else {
