@@ -21,11 +21,25 @@
     die();
   }
 
-  var_dump($db);
-
-  $result = $db->query('SELECT movie_id, user_id, title, release_date, rating, artwork, movie_file, file_ext FROM movies;');
-  while ($row = $result->fetch(PDO::FETCH_ASSOC))
+  if(isset($_POST['username']) && isset($_POST['password']))
   {
-    echo 'movie_id: ' . $row['movie_id'] . 'user_id ' . $row['user_id'] . 'title ' . $row['title'] . 'release_date' . $row['release_date'] . 'rating' . $row['rating'] . 'artwork' . $row['artwork'] . 'movie_file' . $row['movie_file'] . 'file_ext' . $row['file_ext'] . '<br/>';
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $user_id = $db->query('SELECT user_id FROM users WHERE username=:username');
+    $user_id->bindValue(':username', $username, PDO::PARAM_STR);
+    $user_id->execute();
+    $id = $user_id->fetch(PDO::FETCH_ASSOC);
+
+    $user_password = $db->query('SELECT password FROM users WHERE username=:username');
+    $user_password->bindValue(':username', $username, PDO::PARAM_STR);
+    $user_pasword->execute();
+    $check = $user_id->fetch(PDO::FETCH_ASSOC);
+    if ($check === $password) {
+      echo 'Welcome ' . $username . ' Your user id is: ' . $id . ' and your password is: ' . $check;
+    }
+
+  } else {
+
   }
+
 ?>
