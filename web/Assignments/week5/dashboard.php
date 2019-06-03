@@ -3,9 +3,9 @@
   session_start();
 
   var_dump($_SESSION['user']);
-  // var_dump($_SESSION['user_id']);
+  var_dump($_SESSION['user_id']);
 
-  $db = $_SESSION['db'];
+  // $db = $_SESSION['db'];
 ?>
 
 <!DOCTYPE html>
