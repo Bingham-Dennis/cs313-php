@@ -34,9 +34,6 @@
     $user_password->bindValue(':username', $username, PDO::PARAM_STR);
     $user_pasword->execute();
     $check = $user_id->fetchAll(PDO::FETCH_ASSOC);
-    if ($check === $password) {
-      echo 'Welcome ' . $username . ' Your user id is: ' . $id . ' and your password is: ' . $check;
-    }
 
   } else {
 
