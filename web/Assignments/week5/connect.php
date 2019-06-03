@@ -23,11 +23,9 @@
 
   var_dump($db);
 
-  $result = $db->query(
-    "SELECT *
-     FROM movies;"
-  );
-
-  var_dump($result);
-
+  $result = $db->query('SELECT movie_id, user_id, title, release_date, rating, artwork, movie_file, file_ext FROM movies;');
+  while ($row = $result->fetch(PDO::FETCH_ASSOC))
+  {
+    echo 'movie_id: ' . $row['movie_id'] . 'user_id ' . $row['user_id'] . 'title ' . $row['title'] . 'release_date' . $row['release_date'] . 'rating' . $row['rating'] . 'artwork' . $row['artwork'] . 'movie_file' . $row['movie_file'] . 'file_ext' . $row['file_ext'] . '<br/>';
+  }
 ?>
