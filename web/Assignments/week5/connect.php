@@ -31,7 +31,7 @@
     $user_id = $db->prepare('SELECT user_id FROM users WHERE username=:username');
     $user_id->bindValue(':username', $username, PDO::PARAM_STR);
     $user_id->execute();
-    $id = $user_id->fetchAll(PDO::FETCH_ASSOC);
+    $id = $user_id->fetch(PDO::FETCH_ASSOC);
     echo $id;
 
     // $user_password = $db->prepare('SELECT password FROM users WHERE username=:username');
