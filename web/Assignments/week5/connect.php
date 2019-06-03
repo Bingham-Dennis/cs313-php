@@ -44,8 +44,7 @@
 
     if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
       $_SESSION['user'] = $givenUsername;
-      header("Location: ./dashboard.html");
-      var_dump($_SESSION['user']);
+      header("Location: ./dashboard.php");
     }
 
   } else {
