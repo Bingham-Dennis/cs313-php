@@ -23,22 +23,22 @@
 
   if(isset($_POST['username']) && isset($_POST['password']))
   {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $givenUsername = $_POST['username'];
+    $givenPassword = $_POST['password'];
 
-    echo $username;
-    echo $password;
+    echo $givenUsername;
+    echo $givenPassword;
     $user_id = $db->prepare('SELECT user_id FROM users WHERE username=:username');
-    $user_id->bindValue(':username', $username, PDO::PARAM_STR);
+    $user_id->bindValue(':username', $givenUsername, PDO::PARAM_STR);
     $user_id->execute();
     $id = $user_id->fetch(PDO::FETCH_ASSOC);
     var_dump($id);
 
-    $user_password = $db->prepare('SELECT user_password FROM users WHERE username=:username');
-    $user_password->bindValue(':username', $username, PDO::PARAM_STR);
+    $user_password = $db->prepare('SELECT user_password FROM users WHERE id=:id');
+    $user_password->bindValue(':id', $id, PDO::PARAM_INT);
     $user_pasword->execute();
-    $check = $user_id->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($check);
+    $password = $user_id->fetch(PDO::FETCH_ASSOC);
+    var_dump($password);
     // if ($check === $password) {
     //   echo 'Welcome ' . $username . ' Your user id is: ' . $id . ' and your password is: ' . $check;
     // }
