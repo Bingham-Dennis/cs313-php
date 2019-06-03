@@ -23,4 +23,11 @@
 
   var_dump($db);
 
+  $result = $this->$db->query(
+    "SELECT *
+     FROM movies;"
+  );
+
+  var_dump($result);
+
 ?>
