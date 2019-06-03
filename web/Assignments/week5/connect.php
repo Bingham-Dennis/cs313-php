@@ -36,7 +36,7 @@
 
     $user_password = $db->prepare('SELECT user_password FROM users WHERE id=:id');
     $user_password->bindValue(':id', $id, PDO::PARAM_INT);
-    $user_pasword->execute();
+    $user_password->execute();
     $password = $user_id->fetch(PDO::FETCH_ASSOC);
     var_dump($password);
     // if ($check === $password) {
