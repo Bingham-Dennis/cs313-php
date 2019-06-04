@@ -68,7 +68,7 @@ if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true && isset($_P
   </div>
   <form action="uploadMovies.php" method="POST" enctype="multipart/form" id="uploadForm">
     <input type="file" name="file">
-    <button type="submit" name="submit" value="upload">UPLOAD</button>
+    <button type="submit" name="submit">UPLOAD</button>
   </form>
 </body>
 </html>
