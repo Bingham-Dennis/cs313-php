@@ -22,7 +22,7 @@ catch (PDOException $ex)
   die();
 }
 
-if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
+if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true &&isset($_POST['submit'])) {
   $target_directory = "movie_files/";
   $target_file = $target_directory . basename($_FILES['file']['tmpName']);
 }
