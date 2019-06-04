@@ -41,7 +41,7 @@
   <div id="topNav">
     <h1 id="logo">Movies Plus</h1>
   </div>
-  <form action="uploadMovies.php" method="POST" enctype="multipart/form">
+  <form action="uploadMovies.php" method="POST" enctype="multipart/form" id="uploadForm">
     <input type="file" name="file">
     <input type="submit" name="submit" value="upload">
   </form>

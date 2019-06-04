@@ -134,3 +134,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+#uploadForm {
+  margin-top: 30vh;
+}
