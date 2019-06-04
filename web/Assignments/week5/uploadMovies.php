@@ -22,9 +22,34 @@ catch (PDOException $ex)
   die();
 }
 
-if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true &&isset($_POST['submit'])) {
-  $target_directory = "movie_files/";
-  $target_file = $target_directory . basename($_FILES['file']['tmpName']);
+if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true && isset($_POST['submit'])) {
+  $file = $_FILES['file'];
+  $fileName = $_FILES['file']['name'];
+  $fileTmpName = $_FILES['file']['tmp_name'];
+  $fileSize = $_FILES['file']['size'];
+  $fileError = $_FILES['file']['error'];
+  $fileType = $_FILES['file']['type'];
+
+  $fileExt = explode('.', $fileName);
+  $fileActualExt = strtolower(end($fileExt));
+
+  $allowedFile = array('mp4', 'm4v', 'mkv');
+
+  if (in_array($fileActualExt, $allowedFile)) {
+    if ($fileError === 0) {
+      if ($fileSize < 5000000) {
+        $fileDestination = 'movie_files/'.$fileName;
+        move_uploaded_file($fileTmpName, $fileDestination);
+        header("Location: dashboard.php?uploadsuccess");
+      } else {
+        echo "file is too big...";
+      }
+    } else {
+      echo "ERROR: file upload failed.";
+    }
+  } else {
+    echo "File type not allowed, please upload a mp4, m4v, mkv.";
+  }
 }
 ?>
 
