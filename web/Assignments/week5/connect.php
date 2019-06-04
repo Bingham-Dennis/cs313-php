@@ -40,6 +40,8 @@
     $password = $user_password->fetch(PDO::FETCH_ASSOC);
     if ($password['user_password'] === $givenPassword) {
       $_SESSION['Logged_in'] = true;
+    } else {
+      header("Location: ./index.html");
     }
 
     if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
