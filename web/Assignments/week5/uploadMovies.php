@@ -1,31 +1,31 @@
 <?php
-//   session_name('MoviesPlus');
-//   session_start();
-//   $dbUrl = getenv('DATABASE_URL');
+try {
+  session_name('MoviesPlus');
+  session_start();
+  $dbUrl = getenv('DATABASE_URL');
 
-//   $dbOpts = parse_url($dbUrl);
+  $dbOpts = parse_url($dbUrl);
 
-//   $dbHost = $dbOpts["host"];
-//   $dbPort = $dbOpts["port"];
-//   $dbUser = $dbOpts["user"];
-//   $dbPassword = $dbOpts["pass"];
-//   $dbName = ltrim($dbOpts["path"],'/');
+  $dbHost = $dbOpts["host"];
+  $dbPort = $dbOpts["port"];
+  $dbUser = $dbOpts["user"];
+  $dbPassword = $dbOpts["pass"];
+  $dbName = ltrim($dbOpts["path"],'/');
 
-//   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-//   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-// }
-// catch (PDOException $ex)
-// {
-//   echo 'Error!: ' . $ex->getMessage();
-//   die();
-// }
+  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $ex)
+{
+  echo 'Error!: ' . $ex->getMessage();
+  die();
+}
 
-// if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
-//   if(isset($_POST['file'])){
-//     var_dump($_POST['file']);
-//   }
-// }
+if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
+  $target_directory = "movie_files/";
+  $target_file = $target_directory . basename($_FILES['file']['tmpName']);
+}
 ?>
 
 <!DOCTYPE html>

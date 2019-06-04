@@ -22,7 +22,7 @@
 </div>
   <div id="sideNav">
     <ul>
-      <li><a href="./movies.html" ><i class="material-icons">local_movies</i> Movies</a></li>
+      <li><a href="./movies.php" ><i class="material-icons">local_movies</i> Movies</a></li>
       <li><a href="#" ><i class="material-icons">tv</i> TV Shows</a></li>
       <li><a href="#" ><i class="material-icons">library_music</i> Music</a></li>
       <li><a href="#" ><i class="material-icons">photo_library</i> Pictures</a></li>
