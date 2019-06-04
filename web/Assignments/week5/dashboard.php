@@ -51,7 +51,7 @@
   </div>
   <div id="sideNav">
     <ul>
-      <li><a href="#" ><i class="material-icons">add_circle_outline</i> Movies</a></li>
+      <li><a href="./uploadMovies.php" ><i class="material-icons">add_circle_outline</i> Movies</a></li>
       <li><a href="#" ><i class="material-icons">add_circle_outline</i> TV Shows</a></li>
       <li><a href="#" ><i class="material-icons">add_circle_outline</i> Music</a></li>
       <li><a href="#" ><i class="material-icons">add_circle_outline</i> Pictures</a></li>
