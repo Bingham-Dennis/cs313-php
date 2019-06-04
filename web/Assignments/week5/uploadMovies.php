@@ -22,7 +22,9 @@ catch (PDOException $ex)
 }
 
 if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
-
+  if(isset($_POST['file'])){
+    var_dump($_POST['file']);
+  }
 }
 ?>
 
