@@ -1,59 +1,88 @@
 <?php
-try {
-  session_name('MoviesPlus');
-  session_start();
-  print_r($_SESSION['user']);
-  print_r($_SESSION['user_id']);
-  print_r($_SESSION['Logged_in']);
-  $dbUrl = getenv('DATABASE_URL');
+  try {
+    session_name('MoviesPlus');
+    session_start();
+    print_r($_SESSION['user']);
+    print_r($_SESSION['user_id']);
+    print_r($_SESSION['Logged_in']);
+    $dbUrl = getenv('DATABASE_URL');
 
-  $dbOpts = parse_url($dbUrl);
+    $dbOpts = parse_url($dbUrl);
 
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
+    $dbHost = $dbOpts["host"];
+    $dbPort = $dbOpts["port"];
+    $dbUser = $dbOpts["user"];
+    $dbPassword = $dbOpts["pass"];
+    $dbName = ltrim($dbOpts["path"],'/');
 
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  }
+  catch (PDOException $ex)
+  {
+    echo 'Error!: ' . $ex->getMessage();
+    die();
+  }
 
-if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true && isset($_POST['submit'])) {
-  $file = $_FILES['file'];
-  $fileName = $_FILES['file']['name'];
-  $fileTmpName = $_FILES['file']['tmp_name'];
-  $fileSize = $_FILES['file']['size'];
-  $fileError = $_FILES['file']['error'];
-  $fileType = $_FILES['file']['type'];
+  if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true && isset($_POST['submit'])) {
+    $file = $_FILES['file'];
+    $fileName = $_FILES['file']['name'];
+    $fileTmpName = $_FILES['file']['tmp_name'];
+    $fileSize = $_FILES['file']['size'];
+    $fileError = $_FILES['file']['error'];
+    $fileType = $_FILES['file']['type'];
 
-  $fileExt = explode('.', $fileName);
-  $fileActualExt = strtolower(end($fileExt));
+    $fileExt = explode('.', $fileName);
+    $fileActualExt = strtolower(end($fileExt));
 
-  $allowedFile = array('mp4', 'm4v', 'mkv');
+    $allowedFile = array('mp4', 'm4v', 'mkv');
 
-  if (in_array($fileActualExt, $allowedFile)) {
-    if ($fileError === 0) {
-      if ($fileSize < 5000000) {
-        $fileDestination = 'movie_files/'.$fileName;
-        move_uploaded_file($fileTmpName, $fileDestination);
-        header("Location: dashboard.php?uploadsuccess");
+    if (in_array($fileActualExt, $allowedFile)) {
+      if ($fileError === 0) {
+        if ($fileSize < 5000000) {
+          $fileDestination = 'movie_files/'.$fileName;
+          move_uploaded_file($fileTmpName, $fileDestination);
+          header("Location: dashboard.php?uploadsuccess");
+        } else {
+          echo "file is too big...";
+        }
       } else {
-        echo "file is too big...";
+        echo "ERROR: file upload failed.";
       }
     } else {
-      echo "ERROR: file upload failed.";
+      echo "File type not allowed, please upload a mp4, m4v, mkv.";
     }
-  } else {
-    echo "File type not allowed, please upload a mp4, m4v, mkv.";
   }
-}
+?>
+
+<?php
+   try
+   {
+     session_name('MoviesPlus');
+     session_start();
+     $dbUrl = getenv('DATABASE_URL');
+
+     $dbOpts = parse_url($dbUrl);
+
+     $dbHost = $dbOpts["host"];
+     $dbPort = $dbOpts["port"];
+     $dbUser = $dbOpts["user"];
+     $dbPassword = $dbOpts["pass"];
+     $dbName = ltrim($dbOpts["path"],'/');
+
+     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   }
+   catch (PDOException $ex)
+   {
+     echo 'Error!: ' . $ex->getMessage();
+     die();
+   }
+
+   var_dump($_SESSION['user']);
+   var_dump($_SESSION['user_id']);
 ?>
 
 <!DOCTYPE html>
