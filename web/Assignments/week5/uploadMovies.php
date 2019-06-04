@@ -2,6 +2,9 @@
 try {
   session_name('MoviesPlus');
   session_start();
+  print_r($_SESSION['user']);
+  print_r($_SESSION['user_id']);
+  print_r($_SESSION['Logged_in']);
   $dbUrl = getenv('DATABASE_URL');
 
   $dbOpts = parse_url($dbUrl);
