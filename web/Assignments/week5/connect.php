@@ -3,7 +3,6 @@
   {
     session_name('MoviesPlus');
     session_start();
-    $_SESSION['Logged_in'] = false;
     $dbUrl = getenv('DATABASE_URL');
 
     $dbOpts = parse_url($dbUrl);
