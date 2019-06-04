@@ -41,9 +41,9 @@
 </head>
 <body onload="connectDB()">
   <div id="topNav">
-      <h1 id="logo"><a href="./dashboard.html">Movies Plus</a></h1>
+      <h1 id="logo"><a href="./dashboard.php">Movies Plus</a></h1>
       <ul>
-        <li><a href="./dashboard.html"><i class="material-icons">home</i></a></li>
+        <li><a href="./dashboard.php"><i class="material-icons">home</i></a></li>
         <li><a href="#" ><i class="material-icons">settings</i></a></li>
         <li><a href="#" ><i class="material-icons">notifications</i></a></li>
         <li><a href="#" ><i class="material-icons">person</i></a></li>
