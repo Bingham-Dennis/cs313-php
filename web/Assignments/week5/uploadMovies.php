@@ -25,6 +25,7 @@
 
   if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true && isset($_POST['submit'])) {
     $file = $_FILES['file'];
+    var_dump($file);
     $fileName = $_FILES['file']['name'];
     $fileTmpName = $_FILES['file']['tmp_name'];
     $fileSize = $_FILES['file']['size'];
