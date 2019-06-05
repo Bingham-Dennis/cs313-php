@@ -43,7 +43,7 @@
     if (in_array($fileActualExt, $allowedFile)) {
       if ($fileError === 0) {
         if ($fileSize < 5000000) {
-          $fileDestination = './movie_files/'.$fileName;
+          $fileDestination = 'movie_files/'.$fileName;
           move_uploaded_file($fileTmpName, $fileDestination);
           header("Location: dashboard.php?uploadsuccess");
         } else {
