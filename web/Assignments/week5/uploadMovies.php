@@ -55,7 +55,7 @@
   //   } else {
   //     echo "File type not allowed, please upload a mp4, m4v, mkv.";
   //   }
-  // }
+  }
 ?>
 
 <!DOCTYPE html>
