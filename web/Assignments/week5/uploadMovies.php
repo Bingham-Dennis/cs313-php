@@ -36,6 +36,9 @@
 
     $allowedFile = array('mp4', 'm4v', 'mkv');
 
+    var_dump($fileActualExt);
+    var_dump($allowedFile);
+
     if (in_array($fileActualExt, $allowedFile)) {
       if ($fileError === 0) {
         if ($fileSize < 5000000) {
