@@ -40,22 +40,22 @@
     var_dump($fileActualExt);
     var_dump($allowedFile);
 
-    if (in_array($fileActualExt, $allowedFile)) {
-      if ($fileError === 0) {
-        if ($fileSize < 5000000) {
-          $fileDestination = './movie_files/'.$fileName;
-          move_uploaded_file($fileTmpName, $fileDestination);
-          header("Location: dashboard.php?uploadsuccess");
-        } else {
-          echo "file is too big...";
-        }
-      } else {
-        echo "ERROR: file upload failed.";
-      }
-    } else {
-      echo "File type not allowed, please upload a mp4, m4v, mkv.";
-    }
-  }
+  //   if (in_array($fileActualExt, $allowedFile)) {
+  //     if ($fileError === 0) {
+  //       if ($fileSize < 5000000) {
+  //         $fileDestination = './movie_files/'.$fileName;
+  //         move_uploaded_file($fileTmpName, $fileDestination);
+  //         header("Location: dashboard.php?uploadsuccess");
+  //       } else {
+  //         echo "file is too big...";
+  //       }
+  //     } else {
+  //       echo "ERROR: file upload failed.";
+  //     }
+  //   } else {
+  //     echo "File type not allowed, please upload a mp4, m4v, mkv.";
+  //   }
+  // }
 ?>
 
 <!DOCTYPE html>
