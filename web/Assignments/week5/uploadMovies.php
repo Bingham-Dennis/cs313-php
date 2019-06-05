@@ -26,35 +26,35 @@
   if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true && isset($_POST['submit'])) {
     $file = $_FILES['file'];
     var_dump($file);
-    $fileName = $_FILES['file']['name'];
-    $fileTmpName = $_FILES['file']['tmp_name'];
-    $fileSize = $_FILES['file']['size'];
-    $fileError = $_FILES['file']['error'];
-    $fileType = $_FILES['file']['type'];
+    // $fileName = $_FILES['file']['name'];
+    // $fileTmpName = $_FILES['file']['tmp_name'];
+    // $fileSize = $_FILES['file']['size'];
+    // $fileError = $_FILES['file']['error'];
+    // $fileType = $_FILES['file']['type'];
 
-    $fileExt = explode('.', $fileName);
-    $fileActualExt = strtolower(end($fileExt));
+    // $fileExt = explode('.', $fileName);
+    // $fileActualExt = strtolower(end($fileExt));
 
-    $allowedFile = array('mp4', 'm4v', 'mkv');
+    // $allowedFile = array('mp4', 'm4v', 'mkv');
 
-    var_dump($fileActualExt);
-    var_dump($allowedFile);
+    // var_dump($fileActualExt);
+    // var_dump($allowedFile);
 
-  //   if (in_array($fileActualExt, $allowedFile)) {
-  //     if ($fileError === 0) {
-  //       if ($fileSize < 5000000) {
-  //         $fileDestination = './movie_files/'.$fileName;
-  //         move_uploaded_file($fileTmpName, $fileDestination);
-  //         header("Location: dashboard.php?uploadsuccess");
-  //       } else {
-  //         echo "file is too big...";
-  //       }
-  //     } else {
-  //       echo "ERROR: file upload failed.";
-  //     }
-  //   } else {
-  //     echo "File type not allowed, please upload a mp4, m4v, mkv.";
-  //   }
+    // if (in_array($fileActualExt, $allowedFile)) {
+    //   if ($fileError === 0) {
+    //     if ($fileSize < 5000000) {
+    //       $fileDestination = './movie_files/'.$fileName;
+    //       move_uploaded_file($fileTmpName, $fileDestination);
+    //       header("Location: dashboard.php?uploadsuccess");
+    //     } else {
+    //       echo "file is too big...";
+    //     }
+    //   } else {
+    //     echo "ERROR: file upload failed.";
+    //   }
+    // } else {
+    //   echo "File type not allowed, please upload a mp4, m4v, mkv.";
+    // }
   }
 ?>
 
