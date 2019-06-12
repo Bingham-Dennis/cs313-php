@@ -40,7 +40,7 @@
     if ($password['user_password'] === $givenPassword) {
       $_SESSION['Logged_in'] = true;
     } else {
-      header("Location: ./index.html");
+      header("Location: ./index.php");
     }
 
     if(isset($_SESSION['Logged_in']) && $_SESSION['Logged_in'] === true) {
@@ -50,6 +50,6 @@
     }
 
   } else {
-    header("Location: ./index.html");
+    header("Location: ./index.php");
   }
 ?>

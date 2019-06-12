@@ -37,7 +37,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type="text/javascript" src="./src/home.js"></script>
-  <title>Movies Plus | Home</title>
+  <title>Movies Plus | Dashboard</title>
 </head>
 <body onload="connectDB()">
   <div id="topNav">

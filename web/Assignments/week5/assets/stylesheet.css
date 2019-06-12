@@ -66,7 +66,8 @@ ul {
 
 #sideNav {
   background-color: rgb(88, 202, 255);
-  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
   height: 100vh;
   padding-top: 50px;
 }
@@ -129,10 +130,12 @@ hr {
 #loginImage {
   width: 50vh;
   height: 50vh;
-  background-image: url("./images/movie_reels.jpg");
+  background-image: url("../images/movie_reels.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 #uploadForm {
@@ -148,4 +151,100 @@ hr {
   margin-bottom: 10px;
   color: #46B1C9;
   font-size: 14px;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+}
+
+#content video {
+  margin: 30% 70%;
+}
+
+#moviesContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 100px 50px;
+}
+
+.moviePoster {
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+}
+
+#signUpLink {
+  margin-top: 5px;
+}
+
+#signUpLink a{
+  color: #46B1C9;
+  text-decoration: none;
+}
+
+#signUpLink a:hover{
+  color: #FFFBFA;;
+  text-decoration: none;
+}
+
+#existsMessage {
+  margin: 20% 35%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#existsMessage h3 {
+  color: #FFFBFA;
+}
+
+#existsMessage button {
+  padding: 15px 30px;
+  font-size: 14px;
+  background-color: #46B1C9;
+  color: #FFFBFA;
+  border-color: #46B1C9;
+  border-radius: 5px;
+  width: 60%;
+  cursor: pointer;
+}
+
+#registerCard {
+  background-color: #2A2D34;
+  margin: 15% auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgba(42, 45, 52, 0.6);
+}
+
+#registerCard #register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50vh;
+  padding: 50px;
+  margin: 0px auto;
+}
+
+#registerCard #register input {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  color: #46B1C9;
+  font-size: 14px;
+}
+
+#registerCard #register button {
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #46B1C9;
+  border-color: #46B1C9;
+  color: #FFFFFF;
+  border-radius: 5px;
 }

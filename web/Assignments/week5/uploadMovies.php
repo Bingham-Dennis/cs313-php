@@ -43,7 +43,7 @@
     if (in_array($fileActualExt, $allowedFile)) {
       if ($fileError === 0) {
         if ($fileSize < 5000000) {
-          $fileDestination = 'movie_files/'.$fileName;
+          $fileDestination = './movie_files/'.$fileName;
           move_uploaded_file($fileTmpName, $fileDestination);
           header("Location: dashboard.php?uploadsuccess");
         } else {
@@ -65,11 +65,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Movie Plus | Upload Movie</title>
 </head>
 <body>
-  <div id="topNav">
-    <h1 id="logo">Movies Plus</h1>
+<div id="topNav">
+      <h1 id="logo"><a href="./dashboard.php">Movies Plus</a></h1>
+      <ul>
+        <li><a href="./dashboard.php"><i class="material-icons">home</i></a></li>
+        <li><a href="#" ><i class="material-icons">settings</i></a></li>
+        <li><a href="#" ><i class="material-icons">notifications</i></a></li>
+        <li><a href="#" ><i class="material-icons">person</i></a></li>
+      </ul>
   </div>
   <form action="uploadMovies.php" method="post" enctype="multipart/form-data" id="uploadForm">
     <input type="file" name="file">

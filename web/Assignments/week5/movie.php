@@ -8,9 +8,9 @@
   <link rel="stylesheet" type="text/css" href="./assets/stylesheet.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script type="text/javascript" src="./src/movies.js"></script>
-  <title>Movies Plus | Movies</title>
+  <title>Movies Plus | Movie</title>
 </head>
-<body onload="getMovies()">
+<body onload="getMovie()">
   <div id="topNav">
     <h1 id="logo"><a href="./dashboard.php">Movies Plus</a></h1>
     <ul>
@@ -31,7 +31,7 @@
         <li><a href="#" ><i class="material-icons">folder_open</i> Documents</a></li>
       </ul>
     </div>
-    <div id="moviesContainer">
+    <div id="movieContainer">
 
     </div>
   </div>
